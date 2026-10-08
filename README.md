@@ -26,6 +26,22 @@ Open `src/main/java/shapes/` in IntelliJ IDEA or your IDE.
 - Inspect `Shape.java`: Notice how it is declared `abstract` and has an abstract `getArea()` and `getPerimeter()` method.
 - Inspect `Square.java`: Extends `Shape`. Notice how `super(4)` is called to pass the side count to the superclass constructor.
 
+- "The hierarchy is:
+  Shape (abstract)
+  │
+  ├── Square
+  ├── Circle
+  └── Triangle
+  - Shape provides:
+
+  sides
+  getSides()
+  setSides()
+  abstract getArea()
+  abstract getPerimeter()
+
+  Each subclass implements its own area and perimeter."   
+
 ### Task 2: Complete `Circle.java`
 - In `Circle.java`, extend `Shape`.
 - Pass `0` as the number of sides to `super(0)`.
